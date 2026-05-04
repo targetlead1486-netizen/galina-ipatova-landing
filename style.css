@@ -159,6 +159,21 @@ body {
   flex-shrink: 0;
 }
 
+.section-label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.cta-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: -8px;
+}
+
 .disclaimer {
   font-size: 13px;
   color: var(--muted);
