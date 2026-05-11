@@ -13,13 +13,13 @@
   --muted: #6b7a9d;
 }
 
-html, body {
+html {
   height: 100%;
 }
 
 body {
   font-family: 'Outfit', sans-serif;
-  background: var(--white);
+  background: #ffffff;
   color: var(--text);
   min-height: 100vh;
   display: flex;
@@ -29,11 +29,10 @@ body {
 /* ── Layout ── */
 
 .layout {
-  flex: 1;
+  flex: 1 0 auto;
   display: flex;
   align-items: stretch;
   width: 100%;
-  min-height: 0;
 }
 
 /* ── Left ── */
@@ -45,10 +44,7 @@ body {
   justify-content: center;
   gap: 24px;
   padding: 56px 6vw 48px 8vw;
-  background:
-    radial-gradient(ellipse 70% 55% at 0% 105%, rgba(240, 122, 26, 0.18) 0%, transparent 65%),
-    radial-gradient(ellipse 40% 35% at 95% 5%, rgba(240, 122, 26, 0.07) 0%, transparent 60%),
-    #fdf9f5;
+  background: #ffffff;
 }
 
 .tag {
@@ -180,7 +176,7 @@ body {
   flex: 0 0 44%;
   display: flex;
   align-items: stretch;
-  background: var(--light);
+  background: #f0ebe3;
   position: relative;
   overflow: hidden;
 }
@@ -191,7 +187,7 @@ body {
   border-radius: 0;
   overflow: hidden;
   box-shadow: none;
-  background: var(--light);
+  background: #f0ebe3;
   position: relative;
   min-height: 520px;
 }
@@ -211,12 +207,13 @@ body {
 /* ── Footer ── */
 
 .footer {
+  flex-shrink: 0;
   text-align: center;
   padding: 14px 24px;
   font-size: 12px;
   color: var(--muted);
-  background: #fdf9f5;
-  border-top: 1px solid rgba(240, 122, 26, 0.12);
+  background: #ffffff;
+  border-top: 1px solid #e8ecf5;
 }
 
 .footer a {
@@ -240,17 +237,16 @@ body {
   }
 
   .left {
-    padding: 36px 24px 32px;
     order: 2;
-    background:
-      radial-gradient(ellipse 90% 40% at 0% 100%, rgba(240, 122, 26, 0.15) 0%, transparent 65%),
-      #fdf9f5;
+    padding: 36px 24px 32px;
+    background: #ffffff;
   }
 
   .right {
     flex: 0 0 auto;
     order: 1;
     height: 360px;
+    background: #f0ebe3;
   }
 
   .photo-wrap {
