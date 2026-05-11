@@ -229,6 +229,35 @@ body {
   margin: 0 8px;
 }
 
+/* ── Desktop overrides ── */
+
+@media (min-width: 769px) {
+  .headline {
+    font-size: clamp(38px, 4vw, 60px);
+  }
+
+  .bullets li {
+    font-size: 19px;
+  }
+
+  .section-label {
+    font-size: 14px;
+  }
+
+  .cta-label {
+    font-size: 17px;
+  }
+
+  .btn {
+    padding: 18px 34px;
+    font-size: 17px;
+  }
+
+  .disclaimer {
+    font-size: 14px;
+  }
+}
+
 /* ── Responsive ── */
 
 @media (max-width: 768px) {
