@@ -229,6 +229,26 @@ body {
   margin: 0 8px;
 }
 
+/* ── Pulse glow animation ── */
+
+@keyframes pulse-glow {
+  0%   { box-shadow: 0 0 0 0 rgba(240, 122, 26, 0.55), 0 6px 20px rgba(240, 122, 26, 0.3); }
+  70%  { box-shadow: 0 0 0 14px rgba(240, 122, 26, 0), 0 6px 20px rgba(240, 122, 26, 0.3); }
+  100% { box-shadow: 0 0 0 0 rgba(240, 122, 26, 0), 0 6px 20px rgba(240, 122, 26, 0.3); }
+}
+
+.btn-arrow {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-left: 4px;
+  transition: transform 0.2s;
+}
+
+.btn-max:hover .btn-arrow {
+  transform: translateX(4px);
+}
+
 /* ── Desktop overrides ── */
 
 @media (min-width: 769px) {
@@ -251,6 +271,22 @@ body {
   .btn {
     padding: 18px 34px;
     font-size: 17px;
+  }
+
+  .btn-max {
+    width: 100%;
+    justify-content: center;
+    padding: 22px 40px;
+    font-size: 19px;
+    border-radius: 14px;
+    animation: pulse-glow 2.2s ease-out infinite;
+    letter-spacing: 0.01em;
+  }
+
+  .btn-max:hover {
+    animation: none;
+    box-shadow: 0 12px 32px rgba(240, 122, 26, 0.45);
+    transform: translateY(-2px);
   }
 
   .disclaimer {
