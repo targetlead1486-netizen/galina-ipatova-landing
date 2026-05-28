@@ -304,6 +304,19 @@ body {
   100% { box-shadow: 0 0 0 0 rgba(240, 122, 26, 0), 0 6px 20px rgba(240, 122, 26, 0.3); }
 }
 
+@keyframes btn-breathe {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.04); }
+}
+
+.btn-max {
+  animation: btn-breathe 2.4s ease-in-out infinite;
+}
+
+.btn-max:hover {
+  animation: none;
+}
+
 .btn-arrow {
   width: 20px;
   height: 20px;
@@ -346,7 +359,7 @@ body {
     padding: 22px 40px;
     font-size: 19px;
     border-radius: 14px;
-    animation: pulse-glow 2.2s ease-out infinite;
+    animation: pulse-glow 2.2s ease-out infinite, btn-breathe 2.4s ease-in-out infinite;
     letter-spacing: 0.01em;
   }
 
