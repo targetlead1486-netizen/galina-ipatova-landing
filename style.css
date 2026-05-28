@@ -64,6 +64,19 @@ body {
   flex-shrink: 0;
 }
 
+.mobile-hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.mobile-author {
+  display: none;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--muted);
+}
+
 .channel-label {
   font-size: 13px;
   font-weight: 500;
@@ -367,6 +380,14 @@ body {
 
   .mobile-photo {
     display: block;
+  }
+
+  .mobile-author {
+    display: block;
+  }
+
+  .bullets {
+    margin-top: 8px;
   }
 
   .channel-label {
