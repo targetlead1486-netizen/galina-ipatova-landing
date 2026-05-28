@@ -189,9 +189,6 @@ body {
   background: var(--orange);
   color: #fff;
   will-change: transform;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  transform: translateZ(0);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -310,8 +307,8 @@ body {
 }
 
 @keyframes btn-breathe {
-  0%, 100% { transform: scale(1); }
-  50%       { transform: scale(1.04); }
+  0%, 100% { transform: scale(1)    translateZ(0); }
+  50%       { transform: scale(1.04) translateZ(0); }
 }
 
 .btn-max {
@@ -320,6 +317,7 @@ body {
 
 .btn-max:hover {
   animation: none;
+  transform: translateY(-2px) translateZ(0);
 }
 
 .btn-arrow {
