@@ -188,6 +188,11 @@ body {
 .btn-max {
   background: var(--orange);
   color: #fff;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-font-smoothing: antialiased;
 }
 
 .btn-tg {
