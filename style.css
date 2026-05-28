@@ -47,6 +47,23 @@ body {
   background: #ffffff;
 }
 
+.mobile-hero {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.mobile-photo {
+  display: none;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  border: 3px solid var(--orange);
+  flex-shrink: 0;
+}
+
 .channel-label {
   font-size: 13px;
   font-weight: 500;
@@ -339,24 +356,25 @@ body {
   }
 
   .left {
-    order: 2;
-    padding: 36px 24px 32px;
+    order: 1;
+    padding: 28px 22px 32px;
     background: #ffffff;
   }
 
   .right {
-    flex: 0 0 auto;
-    order: 1;
-    height: 360px;
-    background: #f0ebe3;
+    display: none;
   }
 
-  .photo-wrap {
-    min-height: 360px;
+  .mobile-photo {
+    display: block;
   }
 
-  .photo {
-    object-position: 50% 20%;
+  .channel-label {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.3;
+    letter-spacing: 0;
   }
 
   .headline {
