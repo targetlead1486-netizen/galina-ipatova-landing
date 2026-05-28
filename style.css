@@ -339,6 +339,26 @@ body {
 /* ── Desktop overrides ── */
 
 @media (min-width: 769px) {
+  .mobile-photo {
+    display: block;
+  }
+
+  .mobile-author {
+    display: block;
+  }
+
+  .channel-label br {
+    display: inline;
+  }
+
+  .channel-label {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
+
   .headline {
     font-size: clamp(38px, 4vw, 60px);
   }
